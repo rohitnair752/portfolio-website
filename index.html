@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(25, 5, 66);
+            color: white;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(107, 107, 194);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(102, 102, 155);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 5;
+            background: rgb(105, 105, 145);
+            height: 6px;
+            margin: 40px 84px;
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgba(143, 143, 199, 0.581);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #16dad6
+        }
+
+        .btn:active {
+            background-color: #3bdadd;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+
+        .rightsection img {
+            width: 75%;
+
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 34%;
+        }
+
+        .purple {
+            color: rgb(141, 98, 182);
+        }
+
+        #element {
+            color: rgb(141, 98, 182);
+
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vw;
+        }
+
+        .secondsection h1 {
+
+            font-size: 2rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 175px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 96px;
+            width: 162px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 101px;
+            color: gray;
+            width: 150px;
+            font-size: 11px;
+
+        }
+
+        footer {
+            background-color: rgb(105, 105, 227);
+            height: 200px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 73px 700px;
+        }
+
+        @media screen and(max-width: 1400px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+            .vertical-title,.vertical-desc{
+                left: 45px;
+            }
+            .secondsection .box{
+                width: 50vw;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .firstsection{
+                flex-direction: column-reverse;
+
+            }
+            .leftsection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .secondsection{
+                height: 141vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .rightsection{
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+            .rightsection img{
+                width: 45vh;
+                margin-bottom: 73px;
+            }
+            body{
+                min-width: fit-content;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class=left>Rohit's Portfolio</div>
+            <div class=right>
+                <ul>
+                    <li>Home</li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Rohit</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Rohit Nair_Resume.pdf" download><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/rohitnair752"><button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="IMMAGE.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far </span>
+            <h1>Education & Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        PYTHON PROJECT
+                        (01/2022 - 05/2022)
+                    </div>
+                    <div class="vertical-desc">
+                        A school project displaying the impact of covid -19 in various<br> states of the country with
+                        the help of python programming language and its various
+                        functions
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Enhancing Soft Skills and Personality
+                        (02/2023 - 04/2003)
+                    </div>
+                    <div class="vertical-desc">
+                        Certification provided by National Programme on Technology Enhanced
+                        Learnings (NPTEL) for Python in Datascience
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Programming in Python<br>
+                        (09/2023 - 11/2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Certification provided by Consortium for Education Communication
+                        (CEC)
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Repositories on Github
+                        <br> (02/2023 - Present)
+                    </div>
+                    <div class="vertical-desc">
+                        I usually upload various source codes related to web designing/development , C language and many
+                        more created by me which can be accessed
+                        through my github profile
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h2>Rohit's Portfolio</h2>
+                <h3>ThankYou For Visiting</h3>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer','Data Analyst'],
+            typeSpeed: 80,
+        });
+    </script>
+
+</body>
+
+</html>
